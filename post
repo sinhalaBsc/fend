@@ -5,3 +5,53 @@ post-notice
   post-notice-emitter
   post-notice-text
   post-notice-setting
+
+
+
+post 1.0.0
+
+      - ඕනෑම post එකකට අවේනික rates ලැබෙන අතර original post_id එකට වෙනත් rate යටතේ එකතු වේ.
+      - user කෙනෙක් share වුන post එකක් නැවත share කිරීමේදී  වෙනත් යටතේ rate එකතු වන්නේ  original post_id        
+        එකට පමණි. 
+      - video එකක් , live video එකක් ද post එකක් ලෙස සැලකේ.
+
+
+post header එක සැදීමේදී සැළකිය යුතු වර්ග.
+
+* user කෙනෙක් අප like කර ඇති page එකෙක post එකක් පල කිරීම.
+      - දැක්වීම පහත පරිදි සිදුකල හැක.
+        user_name > post_source
+ 
+* page එකේ admin විසින් page එකේ ඔහුගේම post එකක් පල කිරීම.
+      - දැක්වීම පහත පරිදි සිදුකල හැක.
+        page_name 
+* page එකේ admin විසින් page එකේ වෙනත් page එකක post එකක් පල කිරීම.
+      - දැක්වීම පහත පරිදි සිදුකල හැක.
+        page_name "share" post_source 
+* page එකේ admin විසින් page එකේ වෙනත් user කෙනෙක්ගේ post එකක් පල කිරීම.
+      - දැක්වීම පහත පරිදි සිදුකල හැක.
+        page_name "share" post_source 
+* user කෙනෙක් page එකෙක post එකක් බෙදා(share) ගැනීම.
+      - දැක්වීම පහත පරිදි සිදුකල හැක.
+        user_name "share" page_name(hyperlink  post_source) 
+--------------------------------------------------------------------------------------------------------------
+* user කෙනෙක් එයාගෙම post එකක් පල කිරීම.
+      - දැක්වීම පහත පරිදි සිදුකල හැක.
+        user_name 
+* user කෙනෙක් වෙන user කෙනෙක්ගේ post එකක් බෙදා(share) ගැනීම.
+      - දැක්වීම පහත පරිදි සිදුකල හැක.
+        user_name "share" user_name(hyperlink  post_source) 
+--------------------------------------------------------------------------------------------------------------
+* page එකෙක ඇති ප්‍රසිද්ධ post එකක් පෙන්නුම් කිරීම. 
+      - මෙහිදී සිදුවන්නේ වැඩිම අවේනික rates සහිත post එක පෙන්නුම් කිරීමය. 
+      - rates කිරීමේදී පෙන්නුම් කරන post එකට එකතු වන අතර original post_id එකට වෙනත් rate යටතේ rates එකතු වේ. 
+
+* user කෙනෙක් පලකරපු ප්‍රසිද්ධ post එකක් පෙන්නුම් කිරීම.
+      - මෙහිදී සිදුවන්නේ වැඩිම අවේනික rates සහිත post එක පෙන්නුම් කිරීමය. 
+      - rates කිරීමේදී පෙන්නුම් කරන post එකට එකතු වන අතර original post_id එකට වෙනත් rate යටතේ rates එකතු වේ. 
+--------------------------------------------------------------------------------------------------------------
+* "Sponsored" post එකක් පෙන්නුම් කිරීම.
+* "Suggested for You" post එකක් පෙන්නුම් කිරීම.
+* "Dimuthu Dissanayake invited you to join this group."  post එකක් පෙන්නුම් කිරීම.
+     - page එකකට invite කල හැක්කේ user profile එකකින් පමණි. 
+
